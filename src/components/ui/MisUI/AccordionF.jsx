@@ -9,7 +9,7 @@ import {
 export const AccordionF = () => {
   return (
     <Accordion type="single" collapsible>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-[24px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-[24px]">
         <div>
           <AccordionItem value="item-1">
             <AccordionTrigger className="hover:no-underline text-negro">
@@ -33,7 +33,7 @@ export const AccordionF = () => {
           </AccordionItem>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-[24px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-[24px]">
         <div>
           <AccordionItem value="item-3">
             <AccordionTrigger className=" hover:no-underline text-negro">
