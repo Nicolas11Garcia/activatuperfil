@@ -1,0 +1,59 @@
+---
+import { TabsInstagram } from "./ui/MisUI/TabsInstagram";
+import Check from "./Icons/Check.astro";
+import Flash from "./Icons/Flash.astro";
+import Candado from "./Icons/Candado.astro";
+---
+
+<section class="bg-[#F2F6F9] relative pb-[72px]" id="precios">
+  <div class="max-w-[1300px] mx-auto" data-aos="fade-down">
+    <TabsInstagram client:load />
+
+    <div class="mt-[56px] flex justify-center">
+      <a
+        href="https://www.instagram.com/activatuperfil_oficial/"
+        target="_blank"
+        class="max-w-[180.11px] relative flex h-[50px] w-40 items-center justify-center
+        overflow-hidden rounded-xl border-2 border-transparent hover:border-secundary
+         text-white transition-all text-sm font-medium
+          duration-700 before:absolute before:inset-0
+           before:border-0 before:border-white
+            before:duration-100 before:ease-linear
+             bg-secundary hover:text-secundary
+          hover:before:border-[25px]"
+      >
+        <span class="relative z-10">Contactanos</span>
+      </a>
+    </div>
+
+    <div
+      style=" box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);"
+      class="flex items-center flex-col lg:flex-row justify-center lg:justify-between flex-wrap gap-4 rounded-xl bg-white p-6 mt-[80px] mx-6"
+    >
+      <div
+        class="flex flex-col justify-center lg:justify-start sm:flex-row items-center gap-4"
+      >
+        <Check />
+        <p class="text-sm text-center sm:text-start text-parrafo">
+          Reposición gratuita (Si bajan seguidores)
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center lg:justify-start lg:flex-row items-center gap-4"
+      >
+        <Flash />
+        <p class="text-sm text-center lg:text-start text-parrafo">
+          Resultados rápidos
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center lg:justify-start lg:flex-row items-center gap-4"
+      >
+        <Candado />
+        <p class="text-sm text-center sm:text-start text-parrafo">
+          Nunca te pediremos tu contraseña
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

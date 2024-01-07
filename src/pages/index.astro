@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+
+import NavBar from "../components/NavBar.astro";
+import Home from "../components/Home.astro";
+import PreciosInstagram from "../components/PreciosInstagram.astro";
+import ComoComprar from "@/components/ComoComprar.astro";
+import PreguntasFrecuentes from "@/components/PreguntasFrecuentes.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Activa Tu Perfil - Venta de seguidores y likes en ig">
+  <NavBar />
+  <main class="bg-white">
+    <Home />
+    <PreciosInstagram />
+    <ComoComprar />
+    <PreguntasFrecuentes />
+    <Footer />
+  </main>
+</Layout>
+
+<style is:global>
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  /*=============== SCROLL BAR ===============*/
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #1A2128;
+    border-radius: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #48515a;
+  }
+</style>

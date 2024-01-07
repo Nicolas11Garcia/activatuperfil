@@ -1,0 +1,85 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Fomenta el crecimiento de tu emprendimiento con Activa tu perfil, donde puedes
+       adquirir likes, seguidores y visitas al mejor precio. Eleva tanto la presencia
+        de tu cuenta como tus ventas, impulsando tu proyecto hacia el éxito.
+         ¡Acompañamos tu crecimiento con resultados tangibles!"
+    />
+    <meta
+      name="keywords"
+      content="Seguidores, likes, visitas, marketing, marketing digital,
+       activatuperfil,activatuperfil_cl, comprar seguidores, comprar likes, comprar visitas,
+        compra seguidores chile, comprar seguidores chile, seguidores chile,
+         seguidores latinos, likes chile, likes latinos, compra likes chile,
+          compra visitas chile,comprar seguidores,seguidores instagram chile,
+          comprar seguidores instagram,comprar seguidores"
+    />
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/webp" href="/Activa-tu-perfil-icon.jpg" />
+    <meta name="generator" content={Astro.generator} />
+    <!--=============== Google Fonts===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!--=============== AOS===============-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <script
+      is:inline
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script is:inline>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // Subtracting 200 pixels from the offset().top value
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top - 200,
+              },
+              600
+            );
+
+            // Ensure that the hash is updated immediately after the animation starts
+            // by triggering a scroll event
+            $(window).trigger("scroll");
+          } // End if
+        });
+      });
+    </script>
+    <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script is:inline>
+      AOS.init({
+        offset: 180,
+      });
+    </script>
+  </body>
+</html>
