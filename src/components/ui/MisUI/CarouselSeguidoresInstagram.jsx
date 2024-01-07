@@ -25,19 +25,19 @@ export function CarouselSeguidoresInstagram() {
           <ItemCarousel cantidad={1000} tipo={"Seguidores"} precio={4990} />
         </CarouselItem>
         <CarouselItem key={3} className="sm:basis-1/3 md:basis-1/4 py-4">
-          <ItemCarousel cantidad={2000} tipo={"Seguidores"} precio={6990} />
+          <ItemCarousel cantidad={2000} tipo={"Seguidores"} precio={7990} />
         </CarouselItem>
         <CarouselItem key={4} className="sm:basis-1/3 md:basis-1/4 py-4">
-          <ItemCarousel cantidad={3000} tipo={"Seguidores"} precio={8990} />
+          <ItemCarousel cantidad={3000} tipo={"Seguidores"} precio={10990} />
         </CarouselItem>
         <CarouselItem key={5} className="sm:basis-1/3 md:basis-1/4 py-4">
-          <ItemCarousel cantidad={4000} tipo={"Seguidores"} precio={9990} />
+          <ItemCarousel cantidad={4000} tipo={"Seguidores"} precio={13990} />
         </CarouselItem>
         <CarouselItem key={6} className="sm:basis-1/3 md:basis-1/4 py-4">
-          <ItemCarousel cantidad={5000} tipo={"Seguidores"} precio={10990} />
+          <ItemCarousel cantidad={5000} tipo={"Seguidores"} precio={16990} />
         </CarouselItem>
         <CarouselItem key={7} className="sm:basis-1/3 md:basis-1/4 py-4">
-          <ItemCarousel cantidad={10000} tipo={"Seguidores"} precio={19990} />
+          <ItemCarousel cantidad={10000} tipo={"Seguidores"} precio={24990} />
         </CarouselItem>
       </CarouselContent>
       <CarouselPrevious />
